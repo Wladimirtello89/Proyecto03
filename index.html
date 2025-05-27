@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Equilibrium - Centro de Salud Mental</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+  <div class="logo">
+    <img src="assets/Imagen1.jpg" alt="Logo Equilibrium" />
+  </div>
+  <a href="#cita" class="cta-button center-button mobile-only">Agenda tu cita</a>
+  <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+  <nav id="nav-menu">
+    <ul>
+      <li><a href="#inicio" class="nav-link">Inicio</a></li>
+      <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+      <li><a href="#servicios" class="nav-link">Servicios</a></li>
+      <li class="desktop-only"><a href="#cita" class="cta-button">Agenda tu cita</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2>Tu bienestar es nuestra prioridad</h2>
+          <p>Ofrecemos apoyo profesional para equilibrar tu mente y emociones.</p>
+          <a href="#info" class="main-btn">Conoce más</a>
+        </div>
+
+        <div class="color-blobs">
+          <div class="blob lavanda">Texto01</div>
+          <div class="blob turquesa">Texto02</div>
+          <div class="blob naranja">Texto03</div>
+          <div class="blob celeste">Text04</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section id="nosotros">
+    <h3>Sobre Nosotros</h3>
+    <p>Contenido sobre la misión, visión y equipo profesional.</p>
+  </section>
+
+  <section id="servicios">
+    <h3>Servicios</h3>
+    <p>Contenido de terapias y atención que ofrecen.</p>
+  </section>
+
+  <section id="cita">
+    <h3>Agenda tu Cita</h3>
+    <p>Formulario o información para reservar.</p>
+  </section>
+
+  <section id="conocer">
+    <h3>Más Información</h3>
+    <p>Detalles adicionales sobre salud mental.</p>
+  </section>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      document.getElementById('nav-menu').classList.toggle('active');
+    });
+  </script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
